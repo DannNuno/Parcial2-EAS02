@@ -16,8 +16,20 @@ public:
     float getArea();
 };
 
-class Square: public Figura{};
-class Rectangle: public Figura{};
-class Triangle: public Figura{};
+ class Square: public Figura{
+    public:
+    Square():Figura(){};
+    Square(int b, int h, float a):Figura(b,h){};
+};
+class Rectangle: public Figura{
+    public:
+    Rectangle():Figura(){};
+    Rectangle(int b, int h, float a):Figura(b,h){};
+};
+class Triangle: public Figura{
+    public:
+    Triangle():Figura(){};
+    Triangle(int b, int h, float a):Figura(b,h){};
+};
 
 #endif

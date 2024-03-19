@@ -6,7 +6,9 @@ class Square: public Figura{
     Square():Figura(){
         this->setArea(0);
     };
-    Square(int b, int h):Figura(b,h){};
+    Square(int b, int h, float a):Figura(b,h){
+        this->setArea(a);
+    };
 
 };
 
@@ -14,7 +16,9 @@ class Rectangle: public Figura{
     Rectangle():Figura(){
         this->setArea(0);
     };
-    Rectangle(int b, int h):Figura(b,h){};
+    Rectangle(int b, int h, float a):Figura(b,h){
+        this->setArea(a);
+    };
 
 };
 
@@ -22,7 +26,9 @@ class Triangle: public Figura{
     Triangle():Figura(){
         this->setArea(0);
     };
-    Triangle(int b, int h):Figura(b,h){};
+    Triangle(int b, int h, float a):Figura(b,h){
+        this->setArea(a);
+    };
 
 };
 
